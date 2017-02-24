@@ -27,10 +27,6 @@ IF "%DISABLEMSCEIP%"=="N" (
 	ECHO Skipping Disable MS CEIP >> "%LOGFILE%"
 	ECHO   Skipping Disable MS CEIP
 ) ELSE (
-	@REM Disable related tasks
-	ECHO Removing MS CEIP related tasks >> "%LOGFILE%"
-	ECHO   Removing related tasks
-	CALL modifytasks.cmd DISABLE "%TASKSFILE%"
 
 	@REM Remove from Windows
 	ECHO Removing MS CEIP from system >> "%LOGFILE%"
